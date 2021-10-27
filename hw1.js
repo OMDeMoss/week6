@@ -19,20 +19,34 @@ console.log(footer);
 // 6) get the node list of the footer variable, assign it to the variable footerNodes. 
 // Notice how you get back three text nodes around, one comment node, and one element node specifically a paragraph
 
+let footerNodes = footer.childNodes;
+console.log(footerNodes);
 
 
 // 7) get an HTML collection of the footer variable, assign it to the variable footerChildren. 
 // Notice how we only get back the paragraph (element node) back and not the comments or text nodes 
 //like we got with the node list
 
+let footerChildren = footer.children;
+console.log(footerChildren);
+
 // 8) get all elements with the class of "nav-link" and store them in a variable named navLinks
+
+let navLinks = document.getElementsByClassName("nav-link");
+console.log(navLinks);
 
 // 9) Get the ul and store it in a variable named ul HINT: you'll want to use querySelector() 
 //|| getElementsByTagName. querySelector will be easier to use in this instance
+
+let ul = document.querySelector("ul");
+console.log(ul);
 
 // 10) Using the ul variable chain together method and properties of the ul object to get the 
 //"About" <li>, store it in the variable aboutLi. TIP: You need to make the children of <ul> an array 
 // like structure from there try to get the specific index you desire NOTE: Depending on if you use .childNodes || 
 //.children your index number may be different
+
+let aboutLi = ul.children[1];
+console.log(aboutLi);
 
 // 11) Open a pull request to merge "practice" into "main"
